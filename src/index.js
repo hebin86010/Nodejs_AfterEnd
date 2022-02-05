@@ -1,7 +1,6 @@
 // 0. 引入第三方库
 const express = require("express")
-// const {rizhiM, notFoundMF, handlerErrorMF} = require("./middlewares/baseMiddl")       //引入日志中间件
-const { crossDomainM, rizhiM, err404MF, err500MF} = require("./middlewares/baseMiddl")   //引入日志中间件
+const { crossDomainM, rizhiM, err404MF, err500MF} = require("./middlewares/baseMiddl")   //引入基础中间件：跨域、日志、404、500
 const path = require("path")
 // const apiRouter = require("./api/v1/index")                                           //引入封装的api组件,这个地方是否可以把版本号'v1'改为变量，这样可以数据库中取值
 
