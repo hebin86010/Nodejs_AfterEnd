@@ -1,0 +1,12 @@
+{
+    "LoginPath": "views/Login.vue",
+    "Page404Path": "views/pages/404/02/404.vue",
+    "backgroundImage":"assets/backImg/001A.png",
+    "appTitle": "MBA学业系统",
+    "logoPath":"assets/logo/logo-首经贸.png",
+    "layoutInfo": {
+        "layoutPath":"views/layout/02/Layout.vue",
+        "layoutStyle":""
+    }
+        
+}

@@ -10,7 +10,7 @@
 ## 二. 项目的文件目录结构<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通过文件目录结构，梳理项目思路。
 ## 三、第三方库依赖
-1. express
+1. EXPRESS
        <br/>Node的web服务器框架<br>
    1. 安装
       <br/>yarn add express
@@ -25,4 +25,4 @@
   section AG
   task1 : 2020-05-05, 1d
   task2 : 2020-05-07, 2d
-  ```
+ ```

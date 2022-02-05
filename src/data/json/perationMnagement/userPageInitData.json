@@ -1,0 +1,12 @@
+{
+    "LoginPath": "views/Login.vue",
+    "Page404Path": "views/pages/404/02/404.vue",
+    "backgroundImage":"assets/backImg/001A.png",
+    "appTitle": "运营管理系统",
+    "logoPath":"assets/logo/logo-ykzx.png",
+    "layoutInfo": {
+        "layoutPath":"views/layout/02/Layout.vue",
+        "layoutStyle":""
+    }
+        
+}

@@ -1,0 +1,32 @@
+[{
+  "path":"/",  "name": "Home",  "component": "Layout", "redirect": "/course/list","meta":{"title":"首页", "isMenu": true,"closeChildrenMenu": true}
+ },{
+  "path":"/course",  "name": "Course",  "component": "Layout", "redirect": "/course/list","meta":{"title":"课程", "isMenu": true,"closeChildrenMenu": true},
+    "children":[
+      {"path":"/course/list",  "name": "Courselist",  "component": "views/MBAStudies/course/List.vue","meta":{"title":"课程列表", "isMenu": true}},
+      {"path":"/course/student",  "name": "CourseStudent",  "redirect": "views/MBAStudies/course/student/list","meta":{"title":"学生管理", "isMenu": true},
+        "children":[
+          {"path":"/course/student/list",  "name": "CourseStudentList",  "component": "views/MBAStudies/course/student/List.vue","meta":{"title":"学生列表", "isMenu": true}},
+          {"path":"/course/student/addclass",  "name": "CourseStudentAddClass",  "component": "views/MBAStudies/course/student/AddClass.vue","meta":{"title":"添加班级", "isMenu": true}},
+          {"path":"/course/student/addagain",  "name": "CourseStudentAddAgain",  "component": "views/MBAStudies/course/student/AddAgain.vue","meta":{"title":"重修学员添加", "isMenu": true}}
+        ]
+      },
+      {"path":"/course/management",  "name": "CourseManagement", "redirect": "/course/management/courseware","meta":{"title":"课件管理", "isMenu": true},
+        "children":[
+          {"path":"/course/management/courseware",  "name": "CourseManagementCourseware",  "component": "views/MBAStudies/course/management/Courseware.vue","meta":{"title":"课件", "isMenu": true}},
+          {"path":"/course/management/material",  "name": "CourseManagementMaterial",  "component": "views/MBAStudies/course/management/Material.vue","meta":{"title":"资料", "isMenu": true}},
+          {"path":"/course/management/case",  "name": "CourseManagementCase",  "component": "views/MBAStudies/course/management/Case.vue","meta":{"title":"案例", "isMenu": true}}
+        ]   
+      },
+      {"path":"/course/assignment",  "name": "CourseAssignment",   "redirect": "/course/assignment/list","meta":{"title":"作业", "isMenu": true},
+        "children":[
+          {"path":"/course/assignment/list",  "name": "CourseAssignmentList",  "component": "views/MBAStudies/course/assignment/List.vue","meta":{"title":"作业列表", "isMenu": true}},
+          {"path":"/course/assignment/submit",  "name": "CourseAssignmentSubmit",  "component": "views/MBAStudies/course/assignment/Submit.vue","meta":{"title":"作业提交", "isMenu": true}},
+          {"path":"/course/assignment/census",  "name": "CourseAssignmentCensus",  "component": "views/MBAStudies/course/assignment/Census.vue","meta":{"title":"作业统计", "isMenu": true}},
+          {"path":"/course/assignment/requirement",  "name": "CourseAssignmentRequirement",  "component": "views/MBAStudies/course/assignment/Requirement.vue","meta":{"title":"作业要求", "isMenu": true}}
+        ]
+      }
+    ]
+  }
+]
+

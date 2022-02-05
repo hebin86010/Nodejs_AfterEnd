@@ -1,0 +1,59 @@
+[{
+    "path": "/",
+    "name": "Layout",
+    "component": "Layout",
+    "redirect": "/home",
+    "meta": {
+      "isMenu": true,
+      "icon": "HomeFilled",
+      "title": "首页",
+      "keepAlive": true,
+      "closeChildrenMenu":  true
+      },
+      "children": [{
+        "path": "home",
+        "name": "Home",
+        "component": "views/default/Home.vue",
+        "meta": {
+          "isMenu": false,
+          "title": "首页"      
+          }
+      }]
+  },{
+    "path": "/product",
+    "name": "product",
+    "component": "Layout",
+    "redirect": "/product/list",
+    "meta": {
+      "isMenu": true,
+      "icon": "Aim",
+      "title": "商品"      
+      },
+    "children": [{
+        "path": "/product/list",
+        "name": "productList",
+        "component": "views/default/product/List",
+        "meta":{
+            "isMenu": true,
+            "title": "商品管理"
+        }
+        }, {
+        "path": "/product/category",
+        "name": "productCategory",
+        "component": "views/default/product/Category",
+        "meta":{
+            "isMenu": true,
+            "title": "类目管理",
+            "keepAlive": false
+            }
+        }, {
+        "path": "/product/stock",
+        "name": "productStock",
+        "component": "views/default/product/Stock",
+        "meta":{
+            "isMenu": true,
+            "title": "库存管理",
+            "keepAlive": false
+            }
+    }]
+}]
