@@ -36,7 +36,7 @@ let page404 = "./defaulPages/404.html" //404错误响应页面 , 可以根据后
 app.use(err404MF(path.resolve(__dirname, page404)))
 
 // 4.2 500错误处理中间件
-// 在最后的位置，500错误处理中间件（
+// 500错误处理中间件放在最后的位置
 let page500 = "./defaulPages/500.html"  //500错误响应页面 , 可以根据后台设置、调整响应页面
 app.use(err500MF(path.resolve(__dirname, page500)))
 
