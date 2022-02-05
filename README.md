@@ -16,3 +16,12 @@ Node的web服务器框架<br>
    https://www.expressjs.com.cn/starter/installing.html
    
       
+```flow
+st=>start: 开始
+op=>operation: My Operation
+cond=>condition: Yes or No?
+e=>end
+st->op->cond
+cond(yes)->e
+cond(no)->op
+```
