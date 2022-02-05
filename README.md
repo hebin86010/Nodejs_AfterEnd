@@ -8,7 +8,7 @@
 ## 二. 项目的文件目录结构<br>
 通过文件目录结构，梳理项目思路。
 ## 三、第三方库依赖
-### 1. expree
+### 1. express
 Node的web服务器框架<br>
    安装<br>
     yarn add express
