@@ -32,11 +32,8 @@ app.all('/api', (req, resp)=> {
 })
 
 // 4 挂载错误中间件
-//404中间件：前面的路由，都没有匹配到
-app.use(err404MF(path.resolve(__dirname, page404)))
-
-// 500错误中间件：放在最后的位置
-app.use(err500MF(path.resolve(__dirname, page500)))
+app.use(err404MF(path.resolve(__dirname, page404)))         //404中间件：前面的路由，都没有匹配到
+app.use(err500MF(path.resolve(__dirname, page500)))        // 500错误中间件：放在最后的位置
 
 // 5 启动服务器
 app.listen(port, ()=> {

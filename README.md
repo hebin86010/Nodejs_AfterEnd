@@ -16,12 +16,4 @@
       yarn add express
    2. 参考文档
 
-      
- ```mermaid
-  gantt
-  dateFormat YYYY-MM-DD
-  title ganttName
-  section AG
-  task1 : 2020-05-05, 1d
-  task2 : 2020-05-07, 2d
- ```
+
