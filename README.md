@@ -1,5 +1,5 @@
 # 大前端框架
-  使用Node.js + MySQL + Vue创建基本的大前端框架；
+  使用Node.js + MySQL + Vue 基本的大前端框架；
 ## 一. 创建仓库<br>
 组织地址: <br>
 团队地址: <br>
