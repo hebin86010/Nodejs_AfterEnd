@@ -1,9 +1,7 @@
-[TOC]
-
 
 
 # 大前端框架
-   > 使用Node.js + MySQL + Vue3.X 开发的大前端框架；
+      使用Node.js + MySQL + Vue3.X 开发的大前端框架；
 ## 一. 项目仓库<br>
 - 组织地址: <br>
 - 团队地址: <br>
