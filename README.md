@@ -1,19 +1,118 @@
 
 # Nodejs_AfterEnd框架
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;使用Node.js + MySQL + Vue3.X 开发的前、后端Admin系统框架;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;使用Node.js + MySQL 开发的后端系统框架;
 ## 一. 项目仓库
 1. 组织地址: 
 2. 团队地址: 
-3. 仓库地址: 
+3. 仓库地址: https://github.com/hebin86010/Nodejs_AfterEnd
 4. 演示地址: 
 ## 二. 项目的文件目录结构
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通过文件目录结构，梳理项目思路。
 ## 三、第三方库依赖
-1. **EXPRESS**
-      Node的web服务器框架
+1.  **EXPRESS**
+      	Node的web服务器框架
    
-   1. 安装
-      yarn add express
-   2. 参考文档
+   ​	**安装**
+   ​		yarn add express
+   
+   ​	**参考文档**
+   
+   ​		https://www.expressjs.com.cn/starter/installing.html 
+   
+2.  **dayjs**
+   
+   ​	轻量的处理时间和日期的 JavaScript 库
+   
+   ​	**安装**
+   
+   ​		yarn add dayjs
+   
+   ​	**参考文档**
+   
+   ​		https://github.com/iamkun/dayjs/blob/4a7b7d07c885bb9338514c234dbb708e24e9863e/docs/zh-cn/README.zh-CN.md
+   
+3.  **axios**
+
+      ​	用于浏览器和 node.js 的基于 Promise 的 HTTP 客户端
+
+​			**安装**
+
+​				yarn add axios	
+
+​			**参考文档**
+
+​				https://www.npmjs.com/package/axios
+
+4. **nodemailer**
+      ​	用于从 Node.js 发送电子邮件
+
+   ​	**安装**
+
+   ​			yarn add nodemailer
+
+​			**参考文档**
+
+​				https://nodemailer.com/about/
+5.  **sheetjs**
+      	电子表格格式的解析器和编写器
+   
+   ​	**安装**
+   ​		yarn add sheetjs
+   
+   ​	**参考文档**
+   
+   ​		https://github.com/rockboom/SheetJS-docs-zh-CN
+6.  **mysqljs**
+      	MySQL 的 node.js 驱动程序
+   
+   ​	**安装**
+   ​		yarn add mysql
+   
+   ​	**参考文档**
+   
+   ​		https://github.com/mysqljs/mysql
+   ​	
+   ​	
+## 四、函数
+
+   	function execSQL(sql, values=[ ],successCB, failCB)
+   		存储位置：/src/tool/mysql.js ；封装MySQL数据库联接、SQL调用；
+
+   ​	**参数**：
+
+   ​			sql：sql语句，也可以使用模板，如："SELECT * FROM ?? WHERE ??=?;"
+
+   ​			values: sql模板语句参数，可以省略；
+
+   ​			successCB : 成功回调
+
+   ​			failCB : 失败回调
+
+   ​	**实例**
+
+   sql模板语句：
+
+   ```
+   let sql = "SELECT * FROM ?? WHERE ?? = ?；"
+   let valueArry = ['users', 'id', userId]
+   sql = mysql.format(sql, valueArry)
+   ```
 
 
+   方式一：
+
+   ```
+   execSQL(sql, (result）=>{
+   	console.log(result)
+   }, (error）=>{
+   	console.log("错误：", error)
+   })
+   ```
+   方式二：
+
+   ```
+   execSQL(sql).then(result=>{
+   	console.log(result)
+   }).catch(error=>{
+   	console.log("错误：", error)
+   }) 
