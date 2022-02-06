@@ -9,70 +9,37 @@
 ## 二. 项目的文件目录结构
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通过文件目录结构，梳理项目思路。
 ## 三、第三方库依赖
-1.  **EXPRESS**
-      	Node的web服务器框架
+1.  **EXPRESS** <br/>
+      	Node的web服务器框架   
+      	 **安装：**      yarn add express    
+      	**参考文档：**  https://www.expressjs.com.cn/starter/installing.html 
    
-   ​	**安装**
-   ​		yarn add express
+2.  **dayjs** <br/>
+            轻量的处理时间和日期的 JavaScript 库
+       <br/> **安装：** yarn add dayjs
+          <br/> **参考文档：** https://github.com/iamkun/dayjs/blob/4a7b7d07c885bb9338514c234dbb708e24e9863e/docs/zh-cn/README.zh-CN.md
    
-   ​	**参考文档**
-   
-   ​		https://www.expressjs.com.cn/starter/installing.html 
-   
-2.  **dayjs**
-   
-   ​	轻量的处理时间和日期的 JavaScript 库
-   
-   ​	**安装**
-   
-   ​		yarn add dayjs
-   
-   ​	**参考文档**
-   
-   ​		https://github.com/iamkun/dayjs/blob/4a7b7d07c885bb9338514c234dbb708e24e9863e/docs/zh-cn/README.zh-CN.md
-   
-3.  **axios**
+3.  **axios** <br/>
+      	用于浏览器和 node.js 的基于 Promise 的 HTTP 客户端
+       <br/> **安装：** yarn add axios	
+	 <br/> **参考文档：** https://www.npmjs.com/package/axios
 
-      ​	用于浏览器和 node.js 的基于 Promise 的 HTTP 客户端
-
-​			**安装**
-
-​				yarn add axios	
-
-​			**参考文档**
-
-​				https://www.npmjs.com/package/axios
-
-4. **nodemailer**
-      ​	用于从 Node.js 发送电子邮件
-
-   ​	**安装**
-
-   ​			yarn add nodemailer
-
-​			**参考文档**
-
-​				https://nodemailer.com/about/
+4. **nodemailer** <br/>
+           用于从 Node.js 发送电子邮件
+       <br/> **安装：** yarn add nodemailer	
+	 <br/> **参考文档：** https://nodemailer.com/about/
+				
 5.  **sheetjs**
       	电子表格格式的解析器和编写器
+       <br/> **安装：** yarn add sheetjs	
+	 <br/> **参考文档：** https://github.com/rockboom/SheetJS-docs-zh-CN
    
-   ​	**安装**
-   ​		yarn add sheetjs
-   
-   ​	**参考文档**
-   
-   ​		https://github.com/rockboom/SheetJS-docs-zh-CN
 6.  **mysqljs**
-      	MySQL 的 node.js 驱动程序
+      	MySQL 的 node.js 驱动程序器
+       <br/> **安装：** yarn add mysql	
+	 <br/> **参考文档：** https://github.com/mysqljs/mysql
    
-   ​	**安装**
-   ​		yarn add mysql
-   
-   ​	**参考文档**
-   
-   ​		https://github.com/mysqljs/mysql
-   ​	
-   ​	
+	
 ## 四、函数
 
    	function execSQL(sql, values=[ ],successCB, failCB)
