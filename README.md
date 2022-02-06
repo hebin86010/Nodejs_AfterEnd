@@ -58,7 +58,7 @@
    sql模板语句：
 
    ```
-   let sql = "SELECT * FROM ?? WHERE ?? = ?；"  //SQL模板语句
+   let sql = "SELECT * FROM ?? WHERE ?? = ?；"  //SQL模板语句  ?? 表名/字段名占位符； ? 值的占位符
    let valueArry = ['users', 'id', userId]
    sql = mysql.format(sql, valueArry)
    ```
