@@ -42,25 +42,23 @@
 	
 ## 四、函数
 
-   	function execSQL(sql, values=[ ],successCB, failCB)
-   		存储位置：/src/tool/mysql.js ；封装MySQL数据库联接、SQL调用；
+  1. <h3> 函数 execSQL(sql, values=[],successCB, failCB)  </h3>
+  		 存储位置：/src/tool/mysql.js ；封装MySQL数据库联接、SQL调用；
+<h5>参数：</h5>
 
-   ​	**参数**：
+   ​			sql：SQL字符串语句；还可以使用SQL模板，防止SQL注入攻击，如："SELECT * FROM ?? WHERE ??=?;"
 
-   ​			sql：sql语句，也可以使用模板，如："SELECT * FROM ?? WHERE ??=?;"
-
-   ​			values: sql模板语句参数，可以省略；
+   ​			values: sql模板语句参数；默认值为空数组；
 
    ​			successCB : 成功回调
 
    ​			failCB : 失败回调
-
-   ​	**实例**
+ <h5>实例：</h5>
 
    sql模板语句：
 
    ```
-   let sql = "SELECT * FROM ?? WHERE ?? = ?；"
+   let sql = "SELECT * FROM ?? WHERE ?? = ?；"  //SQL模板语句
    let valueArry = ['users', 'id', userId]
    sql = mysql.format(sql, valueArry)
    ```
@@ -83,3 +81,5 @@
    }).catch(error=>{
    	console.log("错误：", error)
    }) 
+```
+---
