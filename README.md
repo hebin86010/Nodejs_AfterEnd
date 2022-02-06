@@ -29,12 +29,12 @@
        <br/> **安装：** yarn add nodemailer	
 	 <br/> **参考文档：** https://nodemailer.com/about/
 				
-5.  **sheetjs**
+5.  **sheetjs**  <br/>
       	电子表格格式的解析器和编写器
        <br/> **安装：** yarn add sheetjs	
 	 <br/> **参考文档：** https://github.com/rockboom/SheetJS-docs-zh-CN
    
-6.  **mysqljs**
+6.  **mysqljs**  <br/>
       	MySQL 的 node.js 驱动程序器
        <br/> **安装：** yarn add mysql	
 	 <br/> **参考文档：** https://github.com/mysqljs/mysql
@@ -43,7 +43,7 @@
 ## 四、函数
 
   1. <h3> 函数 execSQL(sql, values=[],successCB, failCB)  </h3>
-  		 存储位置：/src/tool/mysql.js ；封装MySQL数据库联接、SQL调用；
+  		 存储位置：/src/tool/mysql.js ；封装MySQL的SQL调用；
 <h5>参数：</h5>
 
    ​			sql：SQL字符串语句；还可以使用SQL模板，防止SQL注入攻击，如："SELECT * FROM ?? WHERE ??=?;"
