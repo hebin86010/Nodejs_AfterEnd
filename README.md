@@ -46,7 +46,7 @@
   		 存储位置：/src/tool/mysql.js ；封装MySQL的SQL调用；
 <h5>参数：</h5>
 
-   ​			sql：SQL字符串语句；还可以使用SQL模板，防止SQL注入攻击，如："SELECT * FROM ?? WHERE ??=?;"
+   ​			sql：SQL字符串语句；还可以使用SQL模板，防止SQL注入攻击;
 
    ​			values: sql模板语句参数；默认值为空数组；
 
