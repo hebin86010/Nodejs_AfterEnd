@@ -10,10 +10,6 @@ const port = 80                             //express监听的服务器端口
 const page404 = "./defaulPages/404.html"    //404错误响应页面 , 可以根据后台配置不同风格的响应页面
 const page500 = "./defaulPages/500.html"    //500错误响应页面 , 可以根据后台配置不同风格的响应页面
 
-
-
-
-
 // 1. 创建一个应用服务器
 const app = express()  
 
