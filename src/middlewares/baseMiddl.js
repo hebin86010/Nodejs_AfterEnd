@@ -87,17 +87,26 @@ let err500MF = function(page500){
 
 // 常用工具中间件
 let toolM =  (req, resp, next) => {
+  function ResponseTemp(code, msg, data) {
+    return {
+        code,
+        msg,
+        data
+    }
+  }
   resp.tool ={
     execSQL,
     // 响应模板
-    ResponseTemp: function (code, msg, data) {
-      return {
-          code,
-          msg,
-          data
-    
-      }
+    ResponseTemp,
+    execSQLAutoResponse: function(sql, successMsg = "查询成功！", handlerResultF=result=>result){
+      execSQL(sql).then(result=>{
+          resp.send(ResponseTemp(0, successMsg, handlerResultF(result)))
+      }).catch(error=>{
+          resp.send(ResponseTemp(-1, "API出现错误！", null))
+      })
     }
+
+
   }
   next()
 }
