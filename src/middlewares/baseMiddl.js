@@ -85,11 +85,28 @@ let err500MF = function(page500){
   }
 }
 
+// 常用工具中间件
+let toolM =  (req, resp, next) => {
+  resp.tool ={
+    execSQL,
+    // 响应模板
+    ResponseTemp: function (code, msg, data) {
+      return {
+          code,
+          msg,
+          data
+    
+      }
+    }
+  }
+  next()
+}
 //   交付给外界的模块
 
-module.exports = {
+module.exports =  {
   crossDomainM,
   rizhiM,
   err404MF,
-  err500MF
+  err500MF,
+  toolM
 }
