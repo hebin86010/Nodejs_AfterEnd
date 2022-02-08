@@ -86,7 +86,7 @@ failCB : 失败回调<br/>
    	console.log("错误：", error)
    }) 
 ```
----
+<br/>
 
 <h3> 2. 函数 execSQLAutoResponse(sql, successMsg = "查询成功！", handlerResultF=result=>result)  </h3>
   		 存储位置：/src/middlewares/baseMiddl.js <br/>
