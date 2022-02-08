@@ -102,16 +102,15 @@ handlerResultF：查询结果的数据的处理函数；默认为：直接输出
 ```
 let sql =`
             SELECT
-                wechat_qrcode,
-                mini_program,
-                wb_qrcode,
-                app,
-                tel 
+                id,
+                name,
+		pthon,
+		email
             FROM
-                t_config 
+                t_user
             LIMIT 1;
         `
- execSQLAutoResponse(sql,"查询基础信息成功!",function (result) {
+ execSQLAutoResponse(sql,"查询用户信息成功!",function (result) {
         if (result.length > 0) {
             return result[0];
         } else {
