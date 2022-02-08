@@ -96,3 +96,26 @@ sql：SQL字符串语句；<br/>
 successMsg：查询成功的信息，默认为：“查询成功！”<br/>
 handlerResultF：查询结果的数据的处理函数；默认为：直接输出查询结果；<br/>
 <h4>实例：</h4>
+
+```
+let sql =`
+            SELECT
+                wechat_qrcode,
+                mini_program,
+                wb_qrcode,
+                app,
+                tel 
+            FROM
+                t_config 
+            LIMIT 1;
+        `
+ execSQLAutoResponse(sql,"查询基础信息成功!",function (result) {
+        if (result.length > 0) {
+            return result[0];
+        } else {
+            return {}
+        }
+    })
+
+```
+
