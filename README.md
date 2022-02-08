@@ -65,17 +65,17 @@ failCB : 失败回调<br/>
    const mysql =require("mysql")  //导入第三方mysql驱动库
    
    let userId = 1
-   let password = "' '1'='1"                 
+   let password = "' or '1'='1"                 
    
    //SQL注入攻击
    let sql = `SELECT * FROM users WHERE id =${userId} ? and pw ='${password}';` 
-   // sql = "SELECT * FROM users WHERE id =1 ? and pw ='' '1'='1';"
+   // sql = "SELECT * FROM users WHERE id =1 ? and pw ='' or '1'='1';"
 
    //防止注入攻击：使用SQL模板
    sql = "SELECT * FROM ?? WHERE ?? = ? and ?? =?；"  //SQL模板语句：  ?? 表名/字段名占位符  ? 值的占位符
    let valueArry = ['users', 'id', userId, 'pw', password]
    sql = mysql.format(sql, valueArry)   
-   //sql = "SELECT * FROM `users` WHERE `id` = 1 and `pw` ='\' \'1\'=\'1' ;"
+   //sql = "SELECT * FROM `users` WHERE `id` = 1 and `pw` ='\' or \'1\'=\'1'；"
    ```
 
 
