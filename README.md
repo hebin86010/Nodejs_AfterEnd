@@ -49,7 +49,7 @@
 	
 ## 四、函数
 
- 1. <h3> 函数 execSQL(sql, values=[],successCB, failCB)  </h3>
+<h3> 1.函数 execSQL(sql, values=[],successCB, failCB)</h3>
   		 存储位置：/src/tool/mysql.js ；<br/>
 		 描述：封装MySQL的SQL调用；
 <h5>参数：</h5>
@@ -87,7 +87,7 @@ failCB : 失败回调<br/>
    }) 
 ```
 ---
- 2. <h3> 函数 execSQLAutoResponse(sql, successMsg = "查询成功！", handlerResultF=result=>result)  </h3>
+<h3> 2. 函数 execSQLAutoResponse(sql, successMsg = "查询成功！", handlerResultF=result=>result)  </h3>
   		 存储位置：/src/middlewares/baseMiddl.js <br/>
 		 描述：封装MySQL的SQL调用；
 <h5>参数：</h5>
