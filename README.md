@@ -156,6 +156,6 @@ let info=`
     错误堆栈：${err_stack}
     ==============================================================================================
   `
-sendMail(AdminMail@163.com', '发生500错误', info)
+sendMail(AdminMail@MailServer.com', '发生500错误', info)
 ```
 <br/>
