@@ -49,17 +49,14 @@
 	
 ## 四、函数
 
-  1. <h3> 函数 execSQL(sql, values=[],successCB, failCB)  </h3>
-  		 存储位置：/src/tool/mysql.js ；封装MySQL的SQL调用；
+ 1. <h3> 函数 execSQL(sql, values=[],successCB, failCB)  </h3>
+  		 存储位置：/src/tool/mysql.js ；<br/>
+		 描述：封装MySQL的SQL调用；
 <h5>参数：</h5>
-
-   ​			sql：SQL字符串语句；还可以使用SQL模板，防止SQL注入攻击;
-
-   ​			values: sql模板语句参数；默认值为空数组；
-
-   ​			successCB : 成功回调
-
-   ​			failCB : 失败回调
+sql：SQL字符串语句；还可以使用SQL模板，防止SQL注入攻击;<br/>
+values: sql模板语句参数；默认值为空数组；<br/>
+successCB : 成功回调<br/>
+failCB : 失败回调<br/>
  <h5>实例：</h5>
 
    sql模板语句：
@@ -89,7 +86,8 @@
    	console.log("错误：", error)
    }) 
 ```
-  1. <h3> 函数 execSQLAutoResponse(sql, successMsg = "查询成功！", handlerResultF=result=>result)  </h3>
+---
+ 2. <h3> 函数 execSQLAutoResponse(sql, successMsg = "查询成功！", handlerResultF=result=>result)  </h3>
   		 存储位置：/src/middlewares/baseMiddl.js <br/>
 		 描述：封装MySQL的SQL调用；
 <h5>参数：</h5>
