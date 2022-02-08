@@ -50,7 +50,7 @@
 ## 四、函数
 
 <h3> 1. 函数 execSQL(sql, values=[],successCB, failCB)</h3>
-  		 存储位置：/src/tool/mysql.js ；<br/>
+  		 路径：/src/tool/mysql.js ；<br/>
 		 描述：封装MySQL的SQL调用；
 <h4>参数：</h4>
 sql：SQL字符串语句；还可以使用SQL模板，防止SQL注入攻击;<br/>
@@ -100,7 +100,7 @@ failCB : 失败回调<br/>
 <br/>
 
 <h3> 2.  函数 execSQLAutoResponse(sql, successMsg = "查询成功！", handlerResultF=result=>result)  </h3>
-  		 存储位置：/src/middlewares/baseMiddl.js <br/>
+  		 路径：/src/middlewares/baseMiddl.js <br/>
 		 描述：响应SQL调用；
 <h4>参数：</h4>
 sql：SQL字符串语句；<br/>
@@ -131,7 +131,7 @@ let sql =`
 <br/>
 
 <h3> 3.  函数 ResponseTemp: function (code, msg, data)  </h3>
-  		 存储位置：/src/middlewares/baseMiddl.js <br/>
+  		 路径：/src/middlewares/baseMiddl.js <br/>
 		 描述：响应数据模板；
 <h4>参数：</h4>
 code：响应码；<br/>
@@ -139,7 +139,7 @@ msg：响应信息<br/>
 data：响应数；<br/>
 
 <h3> 4.  函数 sendMail(toUser, title, content)  </h3>
-  		 存储位置：/src/tools/email.js <br/>
+  		 路径：/src/tools/email.js <br/>
 		 描述：发送邮件；
 <h4>参数：</h4>
 toUser：收件地址，多个地址通过逗号分割；<br/>
