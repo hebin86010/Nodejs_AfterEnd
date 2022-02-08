@@ -79,7 +79,7 @@ failCB : 失败回调<br/>
    ```
 
 
-   方式一：
+  调用方式一：
 
    ```
    execSQL(sql, (result）=>{
@@ -88,7 +88,7 @@ failCB : 失败回调<br/>
    	console.log("错误：", error)
    })
    ```
-   方式二：
+   调用方式二：
 
    ```
    execSQL(sql).then(result=>{
