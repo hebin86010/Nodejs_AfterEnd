@@ -68,8 +68,8 @@ failCB : 失败回调<br/>
    let password = "' or '1'='1"                 
    
    //SQL注入攻击
-   let sql = `SELECT * FROM t_user WHERE id =${userId} ? and pw ='${password}';` 
-   // sql = "SELECT * FROM t_user WHERE id =1 ? and pw ='' or '1'='1';"
+   let sql = `SELECT * FROM t_user WHERE id = ${userId} ? and pw = '${password}';` 
+   // sql = "SELECT * FROM t_user WHERE id = 1  and pw = '' or '1'='1';"
 
    //防止注入攻击：使用SQL模板
    sql = "SELECT * FROM ?? WHERE ?? = ? and ?? =?；"  //SQL模板语句：  ?? 表名/字段名占位符  ? 值的占位符
