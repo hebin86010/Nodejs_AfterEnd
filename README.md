@@ -62,11 +62,16 @@ failCB : 失败回调<br/>
    sql模板语句：
 
    ```
-   let sql = "SELECT * FROM ?? WHERE ?? = ? and ?? =?；"  //SQL模板语句  ?? 表名/字段名占位符； ? 值的占位符
    let userId = 1
-   let password = "' '1'='1"              //防止SQL注入攻击
+   let password = "' '1'='1"                 //SQL注入攻击
+   let sql = `SELECT * FROM users WHERE id =${userId} ? and pw ='${password}';` 
+   // sql = "SELECT * FROM users WHERE id =1 ? and pw ='' '1'='1';"
+
+   //使用SQL模板，防止注入攻击
+   sql = "SELECT * FROM ?? WHERE ?? = ? and ?? =?；"  //SQL模板语句  ?? 表名/字段名占位符； ? 值的占位符
    let valueArry = ['users', 'id', userId, 'pw', password]
-   sql = mysql.format(sql, valueArry)   // 转义后，输出字符串："SELECT * FROM `users` WHERE `id` = 1 and `pw` ='\' \'1\'=\'1'；"
+   sql = mysql.format(sql, valueArry)   
+   //sql = "SELECT * FROM `users` WHERE `id` = 1 and `pw` ='\' \'1\'=\'1' ;"
    ```
 
 
