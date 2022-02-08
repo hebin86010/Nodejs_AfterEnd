@@ -62,6 +62,8 @@ failCB : 失败回调<br/>
    sql模板语句：
 
    ```
+   const mysql =require("mysql")  //导入第三方mysql驱动库
+   
    let userId = 1
    let password = "' '1'='1"                 
    
