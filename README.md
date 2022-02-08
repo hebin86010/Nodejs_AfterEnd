@@ -15,7 +15,7 @@
       	**参考文档：**  https://www.expressjs.com.cn/starter/installing.html 
 
 2.  **mysqljs**  <br/>
-      	MySQL 的 node.js 驱动程序器
+      	MySQL 的 node.js 驱动程序
        <br/> **安装：** yarn add mysql	
 	 <br/> **参考文档：** https://github.com/mysqljs/mysql
    
@@ -89,4 +89,12 @@
    	console.log("错误：", error)
    }) 
 ```
----
+  1. <h3> 函数 execSQLAutoResponse(sql, successMsg = "查询成功！", handlerResultF=result=>result)  </h3>
+  		 存储位置：/src/middlewares/baseMiddl.js <br/>
+		 描述：封装MySQL的SQL调用；
+<h5>参数：</h5>
+
+sql：SQL字符串语句；<br/>
+successMsg：查询成功的信息，默认为：“查询成功！”<br/>
+handlerResultF：查询结果的数据的处理函数；默认为：直接输出查询结果；<br/>
+
