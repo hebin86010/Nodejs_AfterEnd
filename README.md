@@ -101,7 +101,7 @@ failCB : 失败回调<br/>
 
 <h3> 2.  函数 execSQLAutoResponse(sql, successMsg = "查询成功！", handlerResultF=result=>result)  </h3>
   		 存储位置：/src/middlewares/baseMiddl.js <br/>
-		 描述：封装MySQL的SQL调用；
+		 描述：响应SQL调用；
 <h4>参数：</h4>
 sql：SQL字符串语句；<br/>
 successMsg：查询成功的信息，默认为：“查询成功！”<br/>
