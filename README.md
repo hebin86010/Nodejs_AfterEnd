@@ -118,4 +118,13 @@ let sql =`
     })
 
 ```
+<br/>
+
+<h3> 3. 函数 ResponseTemp: function (code, msg, data)  </h3>
+  		 存储位置：/src/middlewares/baseMiddl.js <br/>
+		 描述：响应数据模板；
+<h4>参数：</h4>
+code：响应码；<br/>
+msg：响应信息<br/>
+data：响应数；<br/>
 
