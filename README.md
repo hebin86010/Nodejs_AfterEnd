@@ -64,8 +64,8 @@ failCB : 失败回调<br/>
    ```
    let sql = "SELECT * FROM ?? WHERE ?? = ? and ?? =?；"  //SQL模板语句  ?? 表名/字段名占位符； ? 值的占位符
    let userId = 1
-   let pw = "' '1'='1"              //防止SQL注入攻击
-   let valueArry = ['users', 'id', userId, 'pw', pw]
+   let password = "' '1'='1"              //防止SQL注入攻击
+   let valueArry = ['users', 'id', userId, 'pw', password]
    sql = mysql.format(sql, valueArry)   // 转义后，输出字符串："SELECT * FROM `users` WHERE `id` = 1 and `pw` ='\' \'1\'=\'1'；"
    ```
 
