@@ -3,7 +3,9 @@ const express = require("express")
 const path = require("path")
 const { crossDomainM, rizhiM, err404MF, err500MF, toolM} = require("./middlewares/baseMiddl")   //引入基础中间件：跨域、日志、404、500
 const {execSQL} =require("./tools/mysql")
-const homeRouter = require("./routers/homeRouter")
+const personRouter = require("./routers/personRouter")                                              //个人信息数据API
+
+
 
 //引入和定义常量
 const port = 80                             //express监听的服务器端口
@@ -23,7 +25,8 @@ app.use(express.static(path.resolve(__dirname,"public")))    //静态资源服�
 
 
 //3 挂载路由中间件
-app.use("/home", homeRouter)
+app.use("/person", personRouter)                             //挂载个人数据中间件路由
+
 
 // 4 挂载错误中间件
 app.use(err404MF(path.resolve(__dirname, page404)))         //404中间件：前面的路由，都没有匹配到
