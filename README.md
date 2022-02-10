@@ -7,7 +7,9 @@
 3. 仓库地址: https://github.com/hebin86010/Nodejs_AfterEnd
 4. 演示地址: 
 ## 二. 项目的文件目录结构
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通过文件目录结构，梳理项目思路。
+通过文件目录结构，梳理项目思路:<br/>
+https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.md
+
 ## 三、Nodejs第三方库
 1.  **EXPRESS** <br/>
       	Node的web服务器框架   
@@ -43,6 +45,11 @@
       	电子表格格式的解析器和编写器
        <br/> **安装：** yarn add sheetjs	
 	 <br/> **参考文档：** https://github.com/rockboom/SheetJS-docs-zh-CN
+
+8.  **MD5**  <br/>
+      	加密数据的javascript函数：广泛使用的密码散列函数，可以产生出一个128位（16字节）的散列值（hash value）；
+       <br/> **安装：** yarn add md5	
+	 <br/> **参考文档：** https://github.com/pvorb/node-md5#readme
    
 
    
