@@ -4,8 +4,9 @@ const { execSQL } = require("../tools/mysql")
 let router = express.Router()
 router.post("/add_org",(req, resp)=>{
     const {parent_id, org_name, org_abbr = org_name, introduction = ""} = req.body     //解构客户端提交的参数
-    let org_full_name = org_name
-    let parent_org_code = ""
+    // let org_full_name = org_name
+    // let parent_full_name = ""
+    // let parent_org_code = ""
     let creator_id = 5
     let sql =`
         SELECT
@@ -21,12 +22,15 @@ router.post("/add_org",(req, resp)=>{
     execSQL(sql).then(result=>{
         // console.log(result)
         if (result.length > 0) {
-            org_full_name = result[0].org_full_name + '-' + org_full_name
+            // org_full_name = result[0].org_full_name + '-' + org_full_name
+            let parent_full_name = ""
             let parent_org_code = "" 
             if (parent_id > 1){
                 parent_org_code = result[0].org_code + "-"
+                parent_full_name = result[0].org_full_name + '-'
             }
             // 添加新的记录
+            let org_full_name = parent_full_name + org_name
             sql =`
             INSERT INTO t_organization ( org_name, org_abbr, org_full_name, parent_id, introduction, creator_id )
             VALUES ( '${org_name}', '${org_abbr}', '${org_full_name}', ${parent_id}, '${introduction}', ${creator_id} );
