@@ -47,7 +47,7 @@ https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E7%9B%AE%E5%BD%95%E7%BB
 	 <br/> **参考文档：** https://github.com/rockboom/SheetJS-docs-zh-CN
 
 8.  **MD5**  <br/>
-      	加密数据的javascript函数
+      	加密数据的javascript函数：广泛使用的密码散列函数，可以产生出一个128位（16字节）的散列值（hash value），用于确保信息传输完整一致；
        <br/> **安装：** yarn add md5	
 	 <br/> **参考文档：** https://github.com/pvorb/node-md5#readme
    
