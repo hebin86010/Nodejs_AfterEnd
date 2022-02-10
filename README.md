@@ -7,7 +7,9 @@
 3. 仓库地址: https://github.com/hebin86010/Nodejs_AfterEnd
 4. 演示地址: 
 ## 二. 项目的文件目录结构
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通过文件目录结构，梳理项目思路。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通过文件目录结构，梳理项目思路:<br/>
+https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.md
+
 ## 三、Nodejs第三方库
 1.  **EXPRESS** <br/>
       	Node的web服务器框架   
