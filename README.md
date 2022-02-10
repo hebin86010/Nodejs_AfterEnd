@@ -45,6 +45,11 @@ https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E7%9B%AE%E5%BD%95%E7%BB
       	电子表格格式的解析器和编写器
        <br/> **安装：** yarn add sheetjs	
 	 <br/> **参考文档：** https://github.com/rockboom/SheetJS-docs-zh-CN
+
+8.  **MD5**  <br/>
+      	加密数据的javascript函数
+       <br/> **安装：** yarn add md5	
+	 <br/> **参考文档：** https://github.com/pvorb/node-md5#readme
    
 
    
