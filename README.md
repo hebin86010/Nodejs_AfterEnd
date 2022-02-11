@@ -9,8 +9,10 @@
 ## 二. 项目的文件目录结构
 通过文件目录结构，梳理项目思路:<br/>
 https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.md
+## 三. 数据结构
+https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.md
 
-## 三、Nodejs第三方库
+## 四、Nodejs第三方库
 1.  **EXPRESS** <br/>
       	Node的web服务器框架   
       	 **安装：**      yarn add express    
@@ -54,7 +56,7 @@ https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E7%9B%AE%E5%BD%95%E7%BB
 
    
 	
-## 四、函数
+## 五、函数
 
 <h3> 1. 函数 execSQL(sql, values=[],successCB, failCB)</h3>
   		 路径：/src/tool/mysql.js ；<br/>
