@@ -1,0 +1,239 @@
+/*
+ Navicat MySQL Data Transfer
+
+ Source Server         : 阿里云MySQL
+ Source Server Type    : MySQL
+ Source Server Version : 80028
+ Source Host           : 47.93.46.246:3306
+ Source Schema         : classmate_help_db
+
+ Target Server Type    : MySQL
+ Target Server Version : 80028
+ File Encoding         : 65001
+
+ Date: 11/02/2022 19:38:06
+*/
+
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+-- Table structure for t_featrue_code
+-- ----------------------------
+DROP TABLE IF EXISTS `t_featrue_code`;
+CREATE TABLE `t_featrue_code`  (
+  `id` int NOT NULL AUTO_INCREMENT COMMENT '主键：account_id',
+  `featrue_code_type_id` int NOT NULL COMMENT '特征码类型ID',
+  `featrue_code` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '特征码',
+  `verification_code` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '验证码：登录密码、邮箱验证码、手机验证码...',
+  `person_id` int NOT NULL COMMENT '个人ID',
+  `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '注册时间',
+  `last_update_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '最近更新时间',
+  `is_test_data` varchar(1) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '是否测试数据',
+  PRIMARY KEY (`id`) USING BTREE,
+  INDEX `特征码类型`(`featrue_code_type_id`) USING BTREE,
+  INDEX `个人信息ID`(`person_id`) USING BTREE,
+  CONSTRAINT `个人信息ID` FOREIGN KEY (`person_id`) REFERENCES `t_person` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `特征码类型` FOREIGN KEY (`featrue_code_type_id`) REFERENCES `t_featrue_code_type` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE = InnoDB AUTO_INCREMENT = 21 CHARACTER SET = ujis COLLATE = ujis_japanese_ci ROW_FORMAT = DYNAMIC;
+
+-- ----------------------------
+-- Records of t_featrue_code
+-- ----------------------------
+INSERT INTO `t_featrue_code` VALUES (21, 1, 'BaShuoYi', 'e10adc3949ba59abbe56e057f20f883e', 1, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (22, 4, '22021020210', '', 3, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (23, 1, 'ChenZhengYang', 'e10adc3949ba59abbe56e057f20f883e', 4, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (24, 2, '18801288506', '', 4, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (25, 2, '13269996019', '', 1, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (26, 4, '22021020208', '', 1, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (27, 1, 'BaiYuYi', 'e10adc3949ba59abbe56e057f20f883e', 2, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (28, 3, '461013356@qq.com', '', 2, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (29, 4, '22021020209', '', 2, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (30, 3, '18801288506@163.com', '', 4, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (31, 2, '13810338140', '', 3, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (32, 2, '15001106020', '', 2, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (33, 4, '22021020212', '', 4, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (34, 1, 'ChenLei', 'e10adc3949ba59abbe56e057f20f883e', 3, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (35, 1, 'ChengXiang', 'e10adc3949ba59abbe56e057f20f883e', 5, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (36, 2, '15010815688', '', 5, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (37, 1, 'DengHan', 'e10adc3949ba59abbe56e057f20f883e', 6, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (38, 3, 'chengxiang@bitcc.com.cn', '', 5, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (39, 4, '22021020213', '', 5, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (40, 2, '18601032704', '', 6, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (41, 3, '451795016@qq.com', '', 6, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (42, 4, '22021020215', '', 6, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (43, 2, '13811550705', '', 7, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (44, 3, '123517806@qq.com', '', 7, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (45, 4, '22021020216', '', 7, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (46, 1, 'DongQi', 'e10adc3949ba59abbe56e057f20f883e', 8, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (47, 2, '18732322043', '', 8, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (48, 4, '22021020218', '', 8, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (49, 1, 'DengPei', 'e10adc3949ba59abbe56e057f20f883e', 7, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (50, 3, '7667007@qq.com', '', 9, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (51, 3, '364130413@qq.com', '', 8, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (52, 4, '22021020219', '', 9, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (53, 1, 'GaoYiBo', 'e10adc3949ba59abbe56e057f20f883e', 10, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (54, 3, '2841678229@qq.com', '', 10, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (55, 2, '15801086388', '', 10, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (56, 4, '22021020220', '', 10, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (57, 1, 'GaoYanYi', 'e10adc3949ba59abbe56e057f20f883e', 9, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (58, 2, '17610071896', '', 9, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (59, 1, 'GuoXiaoChen', 'e10adc3949ba59abbe56e057f20f883e', 11, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (60, 3, '742984597@qq.com', '', 11, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (61, 4, '22021020226', '', 11, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (62, 1, 'HanBin', 'e10adc3949ba59abbe56e057f20f883e', 12, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (63, 3, '425171986@qq.com', '', 12, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (64, 4, '22021020228', '', 12, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (65, 2, '18610028680', '', 13, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (66, 3, '18610028680@163.com', '', 13, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (67, 2, '15110026313', '', 11, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (68, 2, '13381213136', '', 12, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (69, 1, 'HeBin', 'e10adc3949ba59abbe56e057f20f883e', 13, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (70, 4, '22021020231', '', 13, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (71, 1, 'HouYing', 'e10adc3949ba59abbe56e057f20f883e', 14, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (72, 2, '13811622904', '', 14, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (73, 3, '1098320021@126.com', '', 14, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (74, 4, '22021020232', '', 14, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (75, 1, 'LangTianYi', 'e10adc3949ba59abbe56e057f20f883e', 15, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (76, 2, '18600261594', '', 15, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (77, 3, '645865969@qq.com', '', 15, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (78, 4, '22021020236', '', 15, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (79, 1, 'LeiZhiJun', 'e10adc3949ba59abbe56e057f20f883e', 16, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (80, 2, '13934799575', '', 16, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (81, 4, '22021020237', '', 16, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (82, 1, 'LiNing', 'e10adc3949ba59abbe56e057f20f883e', 17, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (83, 2, '18911296396', '', 17, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (84, 3, 'lining1114@126.com', '', 17, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (85, 4, '22021020238', '', 17, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (86, 1, 'LiXinRui', 'e10adc3949ba59abbe56e057f20f883e', 18, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (87, 2, '13783414516', '', 18, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (88, 3, '63945735@qq.com', '', 18, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (89, 1, 'LiYuTing', 'e10adc3949ba59abbe56e057f20f883e', 19, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (90, 2, '13522345775', '', 19, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (91, 4, '22021020243', '', 19, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (92, 1, 'LiZhe', 'e10adc3949ba59abbe56e057f20f883e', 20, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (93, 2, '13611347189', '', 20, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (94, 3, 'tgfcer2003@163.com', '', 20, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (95, 4, '22021020241', '', 18, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (96, 4, '22021020244', '', 20, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (97, 1, 'LiangDanNi', 'e10adc3949ba59abbe56e057f20f883e', 21, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (98, 2, '13581753066', '', 21, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (99, 3, '1020557850@qq.com', '', 21, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (100, 4, '22021020245', '', 21, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (101, 1, 'LiuHongZhen', 'e10adc3949ba59abbe56e057f20f883e', 22, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (102, 2, '18518939951', '', 22, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (103, 3, '63413720@qq.com', '', 22, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (104, 4, '22021020247', '', 22, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (105, 2, '13718782566', '', 23, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (106, 3, 'l_yang2009@163.com', '', 23, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (107, 4, '22021020252', '', 23, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (108, 1, 'LiuYang', 'e10adc3949ba59abbe56e057f20f883e', 23, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (109, 2, '15810700401', '', 24, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (110, 3, '15731901@qq.com', '', 24, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (111, 4, '22021020254', '', 24, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (112, 1, 'MaJunJie', 'e10adc3949ba59abbe56e057f20f883e', 25, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (113, 2, '15011229828', '', 25, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (114, 3, 'majunjie@goldwind.com.cn', '', 25, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (115, 4, '22021020257', '', 25, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (116, 1, 'MeiLin', 'e10adc3949ba59abbe56e057f20f883e', 26, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (117, 1, 'LiuZhiChao', 'e10adc3949ba59abbe56e057f20f883e', 24, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (118, 4, '22021020260', '', 26, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (119, 1, 'MengMei', 'e10adc3949ba59abbe56e057f20f883e', 27, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (120, 3, 'colin_m007@yeah.net', '', 26, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (121, 3, 'meng.cn@qq.com', '', 27, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (122, 4, '22021020261', '', 27, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (123, 2, '18811522488', '', 27, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (124, 1, 'MengWeiJie', 'e10adc3949ba59abbe56e057f20f883e', 28, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (125, 2, '15910775388', '', 28, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (126, 3, '809148653@qq.com', '', 28, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (127, 4, '22021020262', '', 28, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (128, 1, 'ShenYu', 'e10adc3949ba59abbe56e057f20f883e', 29, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (129, 2, '13601393669', '', 26, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (130, 3, 'shenyu@re.citic.com', '', 29, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (131, 4, '22021020264', '', 29, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (132, 2, '13810156138', '', 29, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (133, 3, '1227761577@qq.com', '', 30, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (134, 4, '22021020266', '', 30, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (135, 1, 'SongShanYun', 'e10adc3949ba59abbe56e057f20f883e', 30, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (136, 1, 'SunYuChao', 'e10adc3949ba59abbe56e057f20f883e', 31, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (137, 2, '17733638725', '', 30, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (138, 2, '18610383165', '', 31, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (139, 4, '22021020270', '', 31, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (140, 1, 'TianXiaoMeng', 'e10adc3949ba59abbe56e057f20f883e', 32, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (141, 2, '15810483573', '', 32, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (142, 3, '271006303@qq.com', '', 31, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (143, 4, '22021020272', '', 32, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (144, 1, 'TongXinYu', 'e10adc3949ba59abbe56e057f20f883e', 33, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (145, 3, 'tongxinyu1993@yeah.net', '', 33, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (146, 4, '22021020274', '', 33, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (147, 2, '18501185710', '', 33, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (148, 2, '13011217489', '', 34, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (149, 3, '240898233@qq.com', '', 34, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (150, 1, 'WangDi', 'e10adc3949ba59abbe56e057f20f883e', 34, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (151, 4, '22021020276', '', 34, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (152, 2, '15001060046', '', 35, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (153, 3, '616891927@qq.com', '', 35, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (154, 4, '22021020282', '', 35, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (155, 1, 'WangSiRui', 'e10adc3949ba59abbe56e057f20f883e', 35, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (156, 3, '549754277@qq.com', '', 36, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (157, 4, '22021020283', '', 36, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (158, 1, 'WuSiYuan', 'e10adc3949ba59abbe56e057f20f883e', 37, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (159, 2, '13121400807', '', 37, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (160, 4, '22021020286', '', 37, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (161, 1, 'XiaTianPeng', 'e10adc3949ba59abbe56e057f20f883e', 38, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (162, 1, 'WangXiu', 'e10adc3949ba59abbe56e057f20f883e', 36, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (163, 2, '13641363195', '', 36, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (164, 2, '13552571457', '', 38, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (165, 4, '22021020288', '', 38, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (166, 1, 'XiaoBo', 'e10adc3949ba59abbe56e057f20f883e', 39, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (167, 2, '18501171652', '', 39, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (168, 4, '22021020289', '', 39, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (169, 1, 'YangYang', 'e10adc3949ba59abbe56e057f20f883e', 40, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (170, 2, '18910886758', '', 40, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (171, 3, '781181243@qq.com', '', 39, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (172, 3, '751439361@qq.com', '', 40, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (173, 1, 'YinYaRan', 'e10adc3949ba59abbe56e057f20f883e', 41, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (174, 4, '22021020292', '', 40, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (175, 3, '523026940@qq.com', '', 41, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (176, 4, '22021020295', '', 41, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (177, 1, 'ZhangFuLi', 'e10adc3949ba59abbe56e057f20f883e', 42, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (178, 2, '17731602727', '', 41, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (179, 2, '13699216296', '', 42, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (180, 3, 'fuli8802@163.com', '', 42, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (181, 4, '22021020298', '', 42, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (182, 1, 'ZhangRuiHong', 'e10adc3949ba59abbe56e057f20f883e', 43, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (183, 2, '15210612726', '', 43, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (184, 3, '470003717@qq.com', '', 43, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (185, 1, 'ZhangXueHui', 'e10adc3949ba59abbe56e057f20f883e', 44, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (186, 2, '15110198096', '', 44, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (187, 3, 'corina1986@126.com', '', 44, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (188, 4, '22021020302', '', 44, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (189, 1, 'ZhangYing', 'e10adc3949ba59abbe56e057f20f883e', 45, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (190, 2, '15203163339', '', 45, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (191, 3, '756525520@qq.com', '', 45, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (192, 4, '22021020300', '', 43, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (193, 4, '22021020304', '', 45, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (194, 1, 'ZhangYunMei', 'e10adc3949ba59abbe56e057f20f883e', 46, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (195, 2, '13651062384', '', 46, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (196, 3, 'zymabcd@126.com', '', 46, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (197, 4, '22021020307', '', 46, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (198, 1, 'ZhaoJunQi', 'e10adc3949ba59abbe56e057f20f883e', 47, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (199, 2, '13264286819', '', 47, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (200, 3, '506630177@qq.com', '', 47, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (201, 4, '22021020309', '', 47, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (202, 1, 'ZhaoWuHua', 'e10adc3949ba59abbe56e057f20f883e', 48, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (203, 2, '13810064844', '', 48, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (204, 3, '446178080@qq.com', '', 48, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (205, 4, '22021020311', '', 48, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (206, 1, 'ZhouChengWen', 'e10adc3949ba59abbe56e057f20f883e', 49, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (207, 2, '13366166570', '', 49, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (208, 3, 'vivi_zhou@163.com', '', 49, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (209, 1, 'ZhuFeiXiang', 'e10adc3949ba59abbe56e057f20f883e', 50, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (210, 4, '22021020316', '', 50, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (211, 3, '412742857@qq.com', '', 50, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (212, 1, 'ZhangSongBo', 'e10adc3949ba59abbe56e057f20f883e', 52, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (213, 2, '18656787698', '', 50, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (214, 1, 'XiaoXu', 'e10adc3949ba59abbe56e057f20f883e', 51, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+INSERT INTO `t_featrue_code` VALUES (215, 4, '22021020314', '', 49, '2022-02-11 19:35:47', '2022-02-11 19:35:47', NULL);
+
+SET FOREIGN_KEY_CHECKS = 1;
