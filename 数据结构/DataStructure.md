@@ -4,7 +4,7 @@
 把能标识用户唯一性的数据，整合在一个表，便于多要素认证、查询等，如：实现多种登录方式(账号、手机、邮箱、微信ID..)<br/>
 
 2. 角色归属各级组织：<br/>
-首先：在组织表(**t_organization**)中，使用字段：组织代码(org_code)、组织全称(org_name),表示其完整的祖先关系,如：<br/>
+首先：在组织表【t_organization】中，使用【t_organization】.org_code、【t_organization】.org_name,表示其完整的祖先关系,如：<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2-3-4-9、大学-学院-2021级-二班 ：各级祖先用中划线分割 '-'<br/>
 第2步：把角色归到各级组织，如：角色(学生)--->组织(二班)<br/>
 第3步：创建用户角色，实现多对多的角色与用户关系，如:<br/>
@@ -23,6 +23,9 @@
 
 ## 表: t_featrue_code
 用户特征码表：存储用户的特征码;<br/>
+外键：<br/>
+【t_featrue_code】.person_id 多对一 【t_person】.id<br/>
+【t_featrue_code】.featrue_code_type_id 多对一 【t_featrue_code_type】.id<br/>
 
 ## 表: t_organization
 组织表：存储各级组织信息;<br/>
@@ -32,6 +35,10 @@
 
 ## 表: t_role
 角色表：存储各级组织的角色;<br/>
+外键：【t_role】.org_id 多对一 【t_organization】.id<br/>
 
 ## 表: role_MM_person
-用户角色关系表：存储用户ID关联角色ID的记录，roel_id 多对多 person_id;<br/>
+用户角色关系表：存储用户ID关联角色ID的记录；<br/>
+外键：<br/>
+【role_MM_person】.roel_id 多对一 【t_role】.id <br/>
+【role_MM_person】.person_id 多对一 【t_person】.id <br/>
