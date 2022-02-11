@@ -10,7 +10,7 @@
 通过文件目录结构，梳理项目思路:<br/>
 https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.md
 ## 三. 数据结构
-https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.md
+https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/DataStructure.md
 
 ## 四、Nodejs第三方库
 1.  **EXPRESS** <br/>
