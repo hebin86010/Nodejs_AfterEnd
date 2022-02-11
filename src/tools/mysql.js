@@ -5,7 +5,7 @@ let pool  = mysql.createPool({
   host     : 'localhost',
   user     : 'root',
   password : 'MySqlPW!123',
-  database : 'base_db'
+  database : 'afterend_db'
 })
 
 function execSQL(sql,values =[], successCB, failCB) {
@@ -28,16 +28,6 @@ function execSQL(sql,values =[], successCB, failCB) {
     })
 }
 
-/* function execSQL(sql){
-    return new Promise((resolve, reject) => {
-      pool.query(sql, function (error, results, fields) {
-        if(error) {
-          reject(error)
-        }
-        resolve(results)
-      })
-    })
-  } */
 
   // 抛出函数的列表
 
