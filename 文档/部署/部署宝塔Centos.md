@@ -6,8 +6,7 @@
 <br/> 2) 打开服务器端口 8888 （宝塔面板需要使用的端口） <br/>
 ![aly_01](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E6%88%AA%E5%9B%BE/aly-01.png)
 ### 2. 安装宝塔面板<br/>
-1. 在线一键快速安装宝塔，浏览器访问：<br/>
-https://www.bt.cn/download/linux.html       
+1. 在线一键快速安装宝塔，浏览器访问：https://www.bt.cn/download/linux.html       
 <br/> 1) 下拉浏览器页面，找到以下界面：输入服务器(公网)IP; 阿里云服务器,【客户端访问密码】<br/>
 ![bt_01](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E6%88%AA%E5%9B%BE/bt-01.png)
 <br/> 2) 选侧需要安装的软件（Nginx + MySQL + pureftpd） <br/>
