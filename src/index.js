@@ -3,12 +3,12 @@ const express = require("express")
 const path = require("path")
 const { crossDomainM, rizhiM, err404MF, err500MF, toolM} = require("./middlewares/baseMiddl")   //引入基础中间件：跨域、日志、404、500
 const personRouter = require("./routers/personRouter")                                          //个人信息数据API
-const featrueRouter = require("./routers/featrueRouter")                                        //特征码信息数据API
+const featureRouter = require("./routers/featureRouter")                                        //特征码信息数据API
 const orgRouter = require("./routers/orgRouter")                                                //组织信息数据API
 
 
 //引入和定义常量
-const port = 80                             //express监听的服务器端口
+const port = 3000                             //express监听的服务器端口,服务器部署时注意不要冲突
 const page404 = "./defaulPages/404.html"    //404错误响应页面 , 可以根据后台配置不同风格的响应页面
 const page500 = "./defaulPages/500.html"    //500错误响应页面 , 可以根据后台配置不同风格的响应页面
 
@@ -26,7 +26,7 @@ app.use(express.static(path.resolve(__dirname,"public")))    //静态资源服�
 
 //3 挂载路由中间件
 app.use("/person", personRouter)                            //挂载个人数据中间件路由
-app.use("/featrue", featrueRouter)                    //挂载特征码数据中间件路由
+app.use("/feature", featureRouter)                    //挂载特征码数据中间件路由
 app.use("/org", orgRouter)                                  //挂载组织数据中间件路由
 
 // 4 挂载错误中间件
