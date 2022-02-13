@@ -11,7 +11,7 @@
 
 ## 二、服务器部署
 1. 环境部署：[查看文档](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2.md) 
-2. 数据库配置:[查看文档](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E9%85%8D%E7%BD%AE.md)
+2. 数据库配置：[查看文档](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E9%85%8D%E7%BD%AE.md)
 
 ## 三、Nodejs第三方库
 1.  **EXPRESS**  [参考文档](https://www.expressjs.com.cn/starter/installing.html) <br/>
