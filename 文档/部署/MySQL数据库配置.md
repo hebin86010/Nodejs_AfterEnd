@@ -12,7 +12,7 @@
 ###  4. 设置MySQL密码：
 ![MySQl_03](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E6%88%AA%E5%9B%BE/MySQl_03A.png)
 ## 三、Navicat导入数据库：
-### 1. 建立数据库联接：
+### 1. 建立数据库连接：
 ![MySQl_03](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E6%88%AA%E5%9B%BE/MySQl_03.png)
 ### 2. 新建数据库：
 ![MySQl_04](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E6%88%AA%E5%9B%BE/MySQl_04.png)
