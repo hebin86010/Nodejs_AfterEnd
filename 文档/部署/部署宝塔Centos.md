@@ -24,5 +24,10 @@ https://www.bt.cn/download/linux.html
 ![bt_6](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E6%88%AA%E5%9B%BE/bt-06.png)
 <br/> 2) 安装Nodejs进程管理软件:pm2 <br/>
 ![bt_7](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E6%88%AA%E5%9B%BE/bt-07.png)
-
+<br/>安装中...耐心等待<br/>
+![bt_8](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E6%88%AA%E5%9B%BE/bt-08.png)
+<br/> 2) 安装资源管理器：:yarn <br/>
+![bt_9](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E6%88%AA%E5%9B%BE/bt-09.png)
+<br/>yarn安装成功<br/>
+![br_10](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E6%88%AA%E5%9B%BE/bt-10.png)
 
