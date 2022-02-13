@@ -6,7 +6,7 @@
 2. 团队地址: 
 3. 仓库地址: https://github.com/hebin86010/Nodejs_AfterEnd
 4. 演示地址:
-5. 目录结构：[查看文档](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.md)
+5. 目录结构：
 6. 数据结构文档：[查看文档](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.md)
 
 ## 二、服务器部署
