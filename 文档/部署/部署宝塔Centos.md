@@ -9,11 +9,11 @@
 1. 在线一键快速安装宝塔：
 https://www.bt.cn/download/linux.html       
 <br/>说明：
-<br/> 1) 下拉页面找到以下界面;输入服务器(公网)IP; 阿里云服务器,【客户端访问密码】<br/>
+<br/> 1) 下拉页面找到以下界面：输入服务器(公网)IP; 阿里云服务器,【客户端访问密码】<br/>
 ![bt_01](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E6%88%AA%E5%9B%BE/bt-01.png)
 <br/> 2) 选侧需要安装的软件（Nginx + MySQL + pureftpd） <br/>
 ![bt_02](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E6%88%AA%E5%9B%BE/bt-02.png)
-<br/> 耐心等待<br/>
+<br/>安装中... 耐心等待<br/>
 ![bt_03](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E6%88%AA%E5%9B%BE/bt-03.png)
 <br/> 3) 安装成功，复制、保存面板信息 <br/>
 ![bt_04](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E6%88%AA%E5%9B%BE/bt-04.png)
