@@ -28,3 +28,4 @@
 <br/>yarn安装成功<br/>
 ![br_10](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E6%88%AA%E5%9B%BE/bt-10.png)
 
+## 二、MySQL配置
