@@ -1,4 +1,4 @@
-# MySQL数据库配置--宝塔面板
+# MySQL数据库配置
 ## 一、 阿里云配置服务器端口 【3306】：
 ![MySQl](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E6%88%AA%E5%9B%BE/MySQl.png)
 ## 二、 宝塔面板配置  
