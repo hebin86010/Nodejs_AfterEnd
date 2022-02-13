@@ -16,7 +16,7 @@
 ## 三、Nodejs第三方库
 1.  **EXPRESS** <br/>
       	Node的web服务器框架   
-      	 **安装：**      yarn add express    
+      	 **安装：**      yarn add express    <br/>
       	[参考文档](https://www.expressjs.com.cn/starter/installing.html) 
 
 2.  **mysqljs**  <br/>
@@ -31,27 +31,27 @@
    
 4.  **axios** <br/>
       	用于浏览器和 node.js 的基于 Promise 的 HTTP 客户端
-       <br/> **安装：** yarn add axios	
+       <br/> **安装：** yarn add axios <br/>	
 	[参考文档](https://www.npmjs.com/package/axios)
 
 5. **nodemailer** <br/>
            用于从 Node.js 发送电子邮件
-       <br/> **安装：** yarn add nodemailer	
+       <br/> **安装：** yarn add nodemailer	<br/>
 	 [参考文档](https://nodemailer.com/about/)
 
 6.  **pinyin-pro**  <br/>
       	汉字拼音转换工具
-       <br/> **安装：** yarn add pinyin-pro	
+       <br/> **安装：** yarn add pinyin-pro	<br/>
 	[参考文档](https://www.npmjs.com/package/pinyin-pro)
 
 7.  **sheetjs**  <br/>
       	电子表格格式的解析器和编写器
-       <br/> **安装：** yarn add sheetjs	
+       <br/> **安装：** yarn add sheetjs	 <br/>
 	[参考文档](https://github.com/rockboom/SheetJS-docs-zh-CN)
 
 8.  **MD5**  <br/>
       	加密数据的javascript函数：广泛使用的密码散列函数，可以产生出一个128位（16字节）的散列值（hash value）；
-       <br/> **安装：** yarn add md5	
+       <br/> **安装：** yarn add md5	<br/>
 	[参考文档](https://github.com/pvorb/node-md5#readme)   
 	
 ## 四、函数
