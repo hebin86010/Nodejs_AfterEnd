@@ -14,45 +14,37 @@
 2. 数据库配置:[查看文档](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E9%85%8D%E7%BD%AE.md)
 
 ## 三、Nodejs第三方库
-1.  **EXPRESS** <br/>
+1.  **EXPRESS**  [参考文档](https://www.expressjs.com.cn/starter/installing.html) <br/>
       	Node的web服务器框架   
       	 **安装：**      yarn add express    <br/>
-      	[参考文档](https://www.expressjs.com.cn/starter/installing.html) 
 
-2.  **mysqljs**  <br/>
+2.  **mysqljs**  [参考文档](https://github.com/mysqljs/mysql)<br/>
       	MySQL 的 node.js 驱动程序
        <br/> **安装：** yarn add mysql	<br/>
-	[参考文档](https://github.com/mysqljs/mysql)
    
-3.  **dayjs** <br/>
+3.  **dayjs** [参考文档](https://github.com/iamkun/dayjs/blob/4a7b7d07c885bb9338514c234dbb708e24e9863e/docs/zh-cn/README.zh-CN.md)<br/>
             轻量的处理时间和日期的 JavaScript 库
        <br/> **安装：** yarn add dayjs <br>
-          [参考文档](https://github.com/iamkun/dayjs/blob/4a7b7d07c885bb9338514c234dbb708e24e9863e/docs/zh-cn/README.zh-CN.md)
    
-4.  **axios** <br/>
+4.  **axios** [参考文档](https://www.npmjs.com/package/axios)<br/>
       	用于浏览器和 node.js 的基于 Promise 的 HTTP 客户端
        <br/> **安装：** yarn add axios <br/>	
-	[参考文档](https://www.npmjs.com/package/axios)
 
-5. **nodemailer** <br/>
+5. **nodemailer** [参考文档](https://nodemailer.com/about/)<br/>
            用于从 Node.js 发送电子邮件
        <br/> **安装：** yarn add nodemailer	<br/>
-	 [参考文档](https://nodemailer.com/about/)
 
-6.  **pinyin-pro**  <br/>
+6.  **pinyin-pro**  [参考文档](https://www.npmjs.com/package/pinyin-pro)<br/>
       	汉字拼音转换工具
        <br/> **安装：** yarn add pinyin-pro	<br/>
-	[参考文档](https://www.npmjs.com/package/pinyin-pro)
-
-7.  **sheetjs**  <br/>
+	
+7.  **sheetjs**  [参考文档](https://github.com/rockboom/SheetJS-docs-zh-CN)<br/>
       	电子表格格式的解析器和编写器
        <br/> **安装：** yarn add sheetjs	 <br/>
-	[参考文档](https://github.com/rockboom/SheetJS-docs-zh-CN)
 
-8.  **MD5**  <br/>
+8.  **MD5**  [参考文档](https://github.com/pvorb/node-md5#readme)<br/>
       	加密数据的javascript函数：广泛使用的密码散列函数，可以产生出一个128位（16字节）的散列值（hash value）；
        <br/> **安装：** yarn add md5	<br/>
-	[参考文档](https://github.com/pvorb/node-md5#readme)   
 	
 ## 四、函数
 
