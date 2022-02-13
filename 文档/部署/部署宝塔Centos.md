@@ -22,4 +22,5 @@ https://www.bt.cn/download/linux.html
 <br/> 1) 登录宝塔面板 <br/>
 ![bt_5](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E6%88%AA%E5%9B%BE/bt-05.png)
 ![bt_6](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E6%88%AA%E5%9B%BE/bt-06.png)
-<br/> 2) 安装Node.js + pm2
+<br/> 2) 安装Nodejs进程管理软件:pm2 <br/>
+
