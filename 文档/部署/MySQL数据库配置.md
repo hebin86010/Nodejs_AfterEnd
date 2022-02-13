@@ -14,9 +14,12 @@
 ## 三、Navicat导入数据库：
 ### 1. 建立数据库联接：
 ![MySQl_03](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E6%88%AA%E5%9B%BE/MySQl_03.png)
-### 2. 导入SQL数据库结构和数据：
+### 2. 新建数据库：
 ![MySQl_04](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E6%88%AA%E5%9B%BE/MySQl_04.png)
-<br/>导入中...耐心等待<br/>
+### 3. 导入SQL数据库结构和数据：
 ![MySQl_05](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E6%88%AA%E5%9B%BE/MySQl_05.png)
-### 3. 完成导入：
+<br/>导入中...耐心等待<br/>
 ![MySQl_06](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E6%88%AA%E5%9B%BE/MySQl_06.png)
+### 4. 完成导入：
+![MySQl_07](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E6%88%AA%E5%9B%BE/MySQl_07.png)
+![MySQl_08](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E6%88%AA%E5%9B%BE/MySQl_08.png)
