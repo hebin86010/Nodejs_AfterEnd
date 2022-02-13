@@ -8,7 +8,7 @@
 4. 演示地址:
 5. 目录结构：https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.md
 6. 数据结构：https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.md
-7. 系统部署： https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E9%83%A8%E7%BD%B2%E5%AE%9D%E5%A1%94Centos.md
+7. 环境部署： https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E9%83%A8%E7%BD%B2%E5%AE%9D%E5%A1%94Centos.md
 
 ## 四、Nodejs第三方库
 1.  **EXPRESS** <br/>
