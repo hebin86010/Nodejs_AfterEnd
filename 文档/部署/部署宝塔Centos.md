@@ -1,5 +1,5 @@
 # 系统部署运维--宝塔面板
-## 一、安装宝塔面板
+## 一、环境部署
 ### 1. 阿里云服务器设置：
 <br/> 1) 设置【客户端访问密码】： <br/>
 ![aly_00](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E6%88%AA%E5%9B%BE/aly-00.png)
