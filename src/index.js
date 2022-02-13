@@ -26,7 +26,7 @@ app.use(express.static(path.resolve(__dirname,"public")))    //静态资源服�
 
 //3 挂载路由中间件
 app.use("/person", personRouter)                            //挂载个人数据中间件路由
-app.use("/feature", featureRouter)                    //挂载特征码数据中间件路由
+app.use("/feature", featureRouter)                          //挂载特征码数据中间件路由
 app.use("/org", orgRouter)                                  //挂载组织数据中间件路由
 
 // 4 挂载错误中间件
