@@ -8,10 +8,12 @@
 4. 演示地址:
 5. 目录结构：https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.md
 6. 数据结构：https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.md
-7. 环境部署： https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2.md
-8. 数据库配置： https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E9%85%8D%E7%BD%AE.md
 
-## 四、Nodejs第三方库
+## 二、服务器部署
+1. 环境部署： https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2.md
+2. 数据库配置： https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E9%85%8D%E7%BD%AE.md
+
+## 三、Nodejs第三方库
 1.  **EXPRESS** <br/>
       	Node的web服务器框架   
       	 **安装：**      yarn add express    
@@ -50,12 +52,9 @@
 8.  **MD5**  <br/>
       	加密数据的javascript函数：广泛使用的密码散列函数，可以产生出一个128位（16字节）的散列值（hash value）；
        <br/> **安装：** yarn add md5	
-	 <br/> **参考文档：** https://github.com/pvorb/node-md5#readme
-   
-
-   
+	 <br/> **参考文档：** https://github.com/pvorb/node-md5#readme   
 	
-## 五、函数
+## 四、函数
 
 <h3> 1. 函数 execSQL(sql, values=[],successCB, failCB)</h3>
   		 路径：/src/tool/mysql.js ；<br/>
