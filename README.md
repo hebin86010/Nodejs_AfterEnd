@@ -84,8 +84,10 @@ failCB : 失败回调<br/>
 
    ```
    execSQL(sql, (result）=>{
+        //根据结果执行的语句
    	console.log(result)
    }, (error）=>{
+   	//根据结果执行的语句
    	console.log("错误：", error)
    })
    ```
@@ -93,8 +95,10 @@ failCB : 失败回调<br/>
 
    ```
    execSQL(sql).then(result=>{
+   	//根据结果执行的语句
    	console.log(result)
    }).catch(error=>{
+   	//根据结果执行的语句
    	console.log("错误：", error)
    }) 
 ```
@@ -122,6 +126,7 @@ let sql =`
             LIMIT 1;
         `
  execSQLAutoResponse(sql,"查询用户信息成功!",function (result) {
+ 	//根据结果执行的语句
         if (result.length > 0) {
             return result[0];
         } else {
