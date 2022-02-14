@@ -90,6 +90,7 @@ failCB : 失败回调<br/>
    	//根据结果执行的语句
    	console.log("错误：", error)
    })
+   //以下语句不等execSQL执行完，先于【execSQL的结果】执行
    ```
    调用方式二：
 
@@ -101,6 +102,7 @@ failCB : 失败回调<br/>
    	//根据结果执行的语句
    	console.log("错误：", error)
    }) 
+   //以下语句不等execSQL执行完，先于【execSQL的结果】执行
 ```
 <br/>
 
@@ -133,7 +135,7 @@ let sql =`
             return {}
         }
     })
-
+//以下语句不等execSQLAutoResponse执行完，先于【execSQLAutoResponse的结果】执行
 ```
 <br/>
 
