@@ -7,12 +7,11 @@
 3. 仓库地址: https://github.com/hebin86010/Nodejs_AfterEnd
 4. 演示地址:
 5. 目录结构：
-6. 数据结构文档：[查看文档](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.md)
-
+6. 数据结构文档：[查看文档](./%E6%96%87%E6%A1%A3/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.md)
 ## 二、服务器部署
-1. 环境部署：[查看文档](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2.md) 
-2. 数据库配置：[查看文档](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E9%85%8D%E7%BD%AE.md)
-3. 代码部署：[查看文档](https://github.com/hebin86010/Nodejs_AfterEnd/blob/main/%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E4%BB%A3%E7%A0%81%E9%83%A8%E7%BD%B2.md)
+1. 环境部署：[查看文档](./%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2.md) 
+2. 数据库配置：[查看文档](./%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E9%85%8D%E7%BD%AE.md)
+3. 代码部署：[查看文档](./%E6%96%87%E6%A1%A3/%E9%83%A8%E7%BD%B2/%E4%BB%A3%E7%A0%81%E9%83%A8%E7%BD%B2.md)
 
 ## 三、Nodejs第三方库
 1.  **EXPRESS**  [参考文档](https://www.expressjs.com.cn/starter/installing.html) <br/>
