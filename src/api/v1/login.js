@@ -11,7 +11,8 @@ router.post("/",(req, resp)=>{
     let pw = req.body.passWord
 
     // 签发token
-    let authorizationTime = "1d"     //token授权时长：1天
+    let authorizationTime =  50     //token授权时长：10秒
+    // let authorizationTime = '1d'     //token授权时长：1天
     let token = createToken(userInfo, authorizationTime)
     let respData = {
         // token: userToken,
