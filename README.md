@@ -30,7 +30,7 @@
    - 安装：yarn add mysql
    - 简介：MySQL 的 node.js 驱动程序;
 
-3.  dayjs 
+3.  dayjs  
    - [参考文档](https://github.com/iamkun/dayjs/blob/4a7b7d07c885bb9338514c234dbb708e24e9863e/docs/zh-cn/README.zh-CN.md)
    - 安装： yarn add dayjs 
    - 简介：轻量的处理时间和日期的 JavaScript 库;
