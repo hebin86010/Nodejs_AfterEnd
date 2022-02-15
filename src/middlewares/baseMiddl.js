@@ -4,7 +4,6 @@ const path = require("path")
 const dayjs = require("dayjs")    //第三方时间插件dayjs
 const {sendMail} = require("../tools/email")         //邮件中间件
 const {execSQL} = require("../tools/mysql")   // 数据库中间件
-const {addFeatrueCode} = require("../tools/feature")        //特征码中间件
 
 // 跨域中间件
 let crossDomainM = (req, resp, next) => {
@@ -100,7 +99,6 @@ let toolM =  (req, resp, next) => {
     execSQL,
     // 响应模板
     ResponseTemp,
-    addFeatrueCode, 
     execSQLAutoResponse: function(sql, successMsg = "查询成功！", handlerResultF=result=>result){
       execSQL(sql).then(result=>{
           resp.send(ResponseTemp(0, successMsg, handlerResultF(result)))

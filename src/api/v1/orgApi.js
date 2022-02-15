@@ -1,5 +1,5 @@
 const express = require("express")
-const { execSQL } = require("../tools/mysql")
+const { execSQL } = require("../../tools/mysql")
 
 let router = express.Router()
 router.post("/add_org",(req, resp)=>{
