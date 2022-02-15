@@ -20,7 +20,7 @@
    5. AP响应码_Restful规范：[查看文档](./doc/Restful_AP响应码规范.md)
    
 ## 三、 第三方库：
-1. EXPRESS
+1. express
    - [参考文档](https://www.expressjs.com.cn/starter/installing.html)
    - 安装：yarn add express
    - 简介：Node的web服务器框架 ;  
@@ -30,12 +30,12 @@
    - 安装：yarn add mysql
    - 简介：MySQL 的 node.js 驱动程序;
 
-3.  dayjs  
-   + [参考文档](https://github.com/iamkun/dayjs/blob/4a7b7d07c885bb9338514c234dbb708e24e9863e/docs/zh-cn/README.zh-CN.md)
+3. dayjs
+   - [参考文档](https://github.com/iamkun/dayjs/blob/4a7b7d07c885bb9338514c234dbb708e24e9863e/docs/zh-cn/README.zh-CN.md)
    - 安装： yarn add dayjs 
    - 简介：轻量的处理时间和日期的 JavaScript 库;
    
-4.  axios 
+4. axios 
    - [参考文档](https://www.npmjs.com/package/axios)
    - 安装：yarn add axios 	
    - 简介：用于浏览器和 node.js 的基于 Promise 的 HTTP 客户端;
