@@ -24,16 +24,22 @@ app.use(express.static(path.resolve(__dirname,"public")))    //静态资源服�
 
 
 
-//3 挂载路由中间件
+// 3. 挂载无需鉴权的路由中间件
+
+// 4.token鉴权
+
+// 5.挂载需要鉴权的路由中间件
 app.use("/person", personRouter)                            //挂载个人数据中间件路由
 app.use("/feature", featureRouter)                          //挂载特征码数据中间件路由
 app.use("/org", orgRouter)                                  //挂载组织数据中间件路由
 
-// 4 挂载错误中间件
+
+
+// 6. 挂载错误中间件
 app.use(err404MF(path.resolve(__dirname, page404)))         //404中间件：前面的路由，都没有匹配到
 app.use(err500MF(path.resolve(__dirname, page500)))        // 500错误中间件：放在最后的位置
 
-// 5 启动服务器
+// 7 启动服务器
 app.listen(port, ()=> {
   console.log(`Express服务器启动成功, 监听端口：${port}`)
 })
