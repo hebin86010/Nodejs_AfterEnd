@@ -17,7 +17,7 @@
    2. 数据结构：[查看文档](./doc/数据结构.md)
    3. 目录结构：[查看文档](./doc/目录结构.md)
    4. 函数：[查看文档](./doc/函数.md)
-   5. Restful_AP响应码规范：[查看文档](./doc/Restful_AP响应码规范.md)
+   5. AP响应码(Restful规范)：[查看文档](./doc/Restful_AP响应码规范.md)
    
 ## 三、 第三方库：
 1. EXPRESS
