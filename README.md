@@ -21,9 +21,9 @@
    
 ## 三、 第三方库：
 1. EXPRESS
-- [参考文档](https://www.expressjs.com.cn/starter/installing.html)
-- 安装：yarn add express
-- 简介：Node的web服务器框架 ;  
+   - [参考文档](https://www.expressjs.com.cn/starter/installing.html)
+   - 安装：yarn add express
+   - 简介：Node的web服务器框架 ;  
  
 2. mysqljs  
 - [参考文档](https://github.com/mysqljs/mysql)
